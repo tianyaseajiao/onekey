@@ -1,4 +1,4 @@
-FROM debian:sid
+FROM debian:latest
 
 ADD configure.sh /configure.sh
 
