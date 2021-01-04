@@ -1,8 +1,7 @@
-FROM alpine:3.5
+FROM debian:sid
 
 ADD configure.sh /configure.sh
 
-RUN apk add --no-cache ca-certificates curl unzip \
- && chmod +x /configure.sh
+RUN chmod +x /configure.sh
 
 CMD /configure.sh
